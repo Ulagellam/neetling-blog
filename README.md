@@ -1,41 +1,25 @@
-# Website
+# Neetling Blog
+This website is made using Docusaurus and it's for Neetling - An platform that helps NEET aspirants study.
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+# Contributing
+Did you see a bug that you wanted to fix? Fork this repo and make a PR! You could also make an issue if you don't have time to fix it!
 
-## Installation
-
-```bash
-yarn
+## Setting up the project in local
+- Clone the forked repo
+```
+  git clone https://github.com/<username>/neetling-blog
 ```
 
-## Local Development
-
-```bash
-yarn start
+- Install dependencies (after `cd`ing into the folder)
+```
+  npm install
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
+- Start the develepoment server
+```
+  npm start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Thats it!
 
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Thanks for your interest in this project! [Read about how this project was made!](https://blog.neetling.com/)

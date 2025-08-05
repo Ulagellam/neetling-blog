@@ -1,0 +1,69 @@
+---
+slug: how-made-this-blog
+title: How a Teenager Made a Blog in Less Than an Hour
+authors: [sivayogeith]
+tags: [tutorial]
+keywords: [docusaurus, teenagers coding, blog, mdx, react, how to, tutorial]
+---
+
+Did you like this blog so much that you want to know how I made it?
+
+Then, this post will answer all your questions!
+
+I made this blog website in around an hour using [Docusaurus](https://docusaurus.io/) and [MDX](https://mdxjs.com/).
+
+## Docusaurus
+Docusaurus is a framework built on top of [React](https://react.dev/) and powered by MDX. 
+
+Using it to create docs or a blog is REALLY easy!
+
+#### Here’s what I did step-by-step:
+
+{/* truncate */}
+
+1. I downloaded `create-docusaurus`, an `npx` script that generates a docusaurus project for you.
+2. Generated a project called `neetling-blog`.
+3. Removed `index.js`, the `docs` folder, and some configs related to both.
+4. Changed the primary dark and light colors in `custom.css` to match Neetling’s theme.
+5. Updated the authors, tags, and other config from the example content.
+
+That’s it! Yeah, that’s how easy it is to make a blog with Docusaurus!
+
+## MDX
+You might be wondering:
+> Where does MDX come into all this?
+
+There’s a secret sixth step - writing the post you’re reading right now!
+
+Yes, this post is made with MDX.
+
+#### Here's the difference between MD and MDX:
+
+With MDX, you can make your blog interactive since MDX is basically MD + [JSX](https://react.dev/learn/writing-markup-with-jsx).
+For example, you can use JSX to create an interactive button:
+
+```jsx live
+<button onClick={() => alert('BOOOOO!')} style={{padding: 10}}>Click me if you have the courage!</button>
+```
+
+<details>
+  <summary>Bonus! How does the live editor work?</summary>
+  <p>
+  Good question! Here are the steps I followed to add it:
+
+  1. Download `@docusaurus/theme-live-codeblock`
+  2. Add it to `themes` in `docusaurus.config.ts`
+  3. Used the `live` modifier on a code block like this:
+
+    ````md {1}
+    ```jsx live
+        <button onClick={() => alert('BOOOOO!')} style={{padding: 10}}>Click me if you have the courage!</button>
+    ```
+    ````
+    </p>
+</details>
+
+## Lastly...
+Did you see something that you'd like to change? [Contribute to this website](https://github.com/Ulagellam/neetling-blog) - it's open-source!
+
+Also, this project was submitted to the [Summer of Making](https://summer.hackclub.com/) by Hack Club!
